@@ -4,9 +4,21 @@ defineProps({
     type: String,
     required: true,
   },
-  cardIcon: {
+  tag1: {
     type: String,
-    required: true,
+    required: false,
+  },
+  tag2: {
+    type: String,
+    required: false,
+  },
+  tag3: {
+    type: String,
+    required: false,
+  },
+  tag4: {
+    type: String,
+    required: false,
   },
   txt: {
     type: String,
@@ -19,7 +31,10 @@ defineProps({
   <div class="card">
     <div class="card-head">
       <h3>{{ head }}</h3>
-      <img :src="cardIcon" alt="artboard cardIcon" />
+      <p class="tag1">{{ tag1 }}</p>
+      <p class="tag2">{{ tag2 }}</p>
+      <p class="tag3">{{ tag3 }}</p>
+      <p class="tag4">{{ tag4 }}</p>
     </div>
     <span>{{ txt }}</span>
   </div>
@@ -29,17 +44,18 @@ defineProps({
 .card {
   background: var(--vt-art-card-bg);
   padding: 30px;
-  width: 364px;
-  height: 258px;
+  width: 264px;
+  height: 262px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
 }
 
 .card:hover {
-    background-color: var(--vt-art-card-bg-hover);
+  background-color: var(--vt-art-card-bg-hover);
 }
 
 .card-head {
@@ -47,6 +63,36 @@ defineProps({
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
+}
+
+p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  letter-spacing: -0.41999998688697815px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+p.tag1 {
+  color: #46efe4;
+}
+
+p.tag2 {
+  color: #7bf2ab;
+}
+
+p.tag3 {
+  color: #b0f571;
+}
+
+p.tag4 {
+  color: #ccf652;
 }
 
 span {
@@ -65,7 +111,8 @@ h3 {
   font-family: Inter;
   font-size: 26px;
   font-weight: 600;
-  line-height: 29px;
+  width: 100px;
+  line-height: 38px;
   letter-spacing: -0.7799999713897705px;
   text-align: left;
   text-underline-position: from-font;
