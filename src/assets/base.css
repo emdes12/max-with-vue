@@ -3,6 +3,9 @@
   --vt-white: #ffffff;
   --vt-black: #000000;
   --body-bg: #272B3F;
+  --vt-light-bg-color: #8C929E;
+  --vt-art-card-bg: #323853;
+  --vt-art-card-bg-hover: #3238539d;
 }
 
 /* semantic color variables for this project */
