@@ -1,5 +1,5 @@
 <script setup>
-import ArtBoardCard from "./ArtBoardCard.vue";
+import ArtBoardCard from "./cards/ArtBoardCard.vue";
 import RocketImgOne from "../assets/icons/icon-rocket-1.svg.svg"
 import RocketImgTwo from "../assets/icons/icon-rocket-1.svg (1).svg"
 import RocketImgThree from "../assets/icons/icon-rocket-1.svg (2).svg"
