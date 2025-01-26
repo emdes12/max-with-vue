@@ -6,6 +6,7 @@ import AbsImg from "./assets/images/Ready to Elevate Your Marketing Game_.png";
 import PrimaryButton from "./components/btn/PrimaryButton.vue";
 import ArtBoard from "./components/ArtBoard.vue";
 import HowItWorks from "./components/HowItWorks.vue";
+import OutputList from "./components/OutputList.vue";
 </script>
 
 <template>
@@ -60,6 +61,13 @@ import HowItWorks from "./components/HowItWorks.vue";
         txt="From structured value propositions to ready-to-use marketing collateral, Rocketyzer equips you with a comprehensive set of tools to elevate your marketing game."
       />
     </div>
+    <div class="bg-color-2">
+      <OutputList />
+    </div>
+  </main>
+
+  <main id="why-us">
+    <BigNPara head1="Why"
   </main>
 </template>
 

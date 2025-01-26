@@ -1,5 +1,5 @@
 <script setup>
-import outputCard from "./cards/outputCard.vue";
+import OutputCard from "./cards/outputCard.vue";
 </script>
 
 <template>
@@ -12,3 +12,13 @@ import outputCard from "./cards/outputCard.vue";
         <OutputCard head="Hero Messages for A/B Test" txt="Multiple hero messages tailored for your landing pages' first screens. Test, iterate, and boost your conversions with compelling headlines."/>
     </div>
 </template>
+
+<style scoped>
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+</style>
