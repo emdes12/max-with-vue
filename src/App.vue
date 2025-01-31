@@ -8,6 +8,7 @@ import ArtBoard from "./components/ArtBoard.vue";
 import HowItWorks from "./components/HowItWorks.vue";
 import OutputList from "./components/OutputList.vue";
 import WhyUsBox from "./components/WhyUsBox.vue";
+import Pricing from "./components/Pricing.vue";
 </script>
 
 <template>
@@ -70,8 +71,8 @@ import WhyUsBox from "./components/WhyUsBox.vue";
   <main id="why-us">
     <div class="why"></div>
     <div class="container">
-    <BigNPara head1="Why Rocketyzer" head2="Stands Out" />
-     <WhyUsBox />
+      <BigNPara head1="Why Rocketyzer" head2="Stands Out" />
+      <WhyUsBox />
     </div>
   </main>
 
@@ -80,7 +81,7 @@ import WhyUsBox from "./components/WhyUsBox.vue";
       flD2="column-reverse"
       head2="Secret Sauce"
       head1="The Value Proposition Toolkits"
-        txt="While the digital landscape is flooded with automated copy generators, Rocketyzer stands apart. Our foundation is the proven methodology of the Value Proposition Toolkit."
+      txt="While the digital landscape is flooded with automated copy generators, Rocketyzer stands apart. Our foundation is the proven methodology of the Value Proposition Toolkit."
     />
   </main>
 
@@ -92,6 +93,36 @@ import WhyUsBox from "./components/WhyUsBox.vue";
       />
     </div>
   </section>
+
+    <main class="vprop">
+      <div class="prop-value-desc container">
+        <div class="details">
+          <h4>
+            The Value Proposition Toolkit is a carefully designed methodology
+            that explores the nuances of product value, target customers, and
+            market differentiation.
+          </h4>
+          <p>
+            By integrating this toolkit, Rocketyzer ensures that every value
+            proposition and piece of marketing collateral is rooted in a deep
+            understanding of the product’s core value and its resonance with the
+            target audience.
+          </p>
+        </div>
+        <img
+          src="./assets/images/Group_154.svg fill.png"
+          alt="dialogue windows"
+        />
+      </div>
+    </main>
+
+    <main id="pricing">
+      <div class="container">
+        <BigNPara  head1="Pricing" head2="Plans" />
+
+        <Pricing />
+      </div>
+    </main>
 </template>
 
 <style scoped>
@@ -111,17 +142,65 @@ import WhyUsBox from "./components/WhyUsBox.vue";
   padding-bottom: 287px;
 }
 
+.vprop, #pricing {
+  background: #0E0E0E;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.prop-value-desc {
+  background: linear-gradient(180deg, rgba(39, 43, 63, 0.67) 0%, #383e5c 100%);
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #8c929e;
+}
+
+.details h4 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: -0.9599999785423279px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--vt-white);
+}
+
 #why-us {
   position: relative;
 }
 
-#why-us  .container {
+#why-us .container {
   top: -40px;
 }
 
 .why {
   right: 0;
-  background-image: linear-gradient(180deg, #0E0E0F 0%, #272B3F 100%);
+  background-image: linear-gradient(180deg, #0e0e0f 0%, #272b3f 100%);
   width: 100%;
   height: 207px;
 }
