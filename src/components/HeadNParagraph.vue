@@ -2,21 +2,21 @@
 defineProps({
   head1: {
     type: String,
-    default: "Header",
-    required: true,
+    required: false,
   },
   head2: {
     type: String,
-    default: "Header2",
-    required: true,
+    required: false,
   },
   txt: {
     type: String,
-    default:
-      "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ",
-    required: true,
+    required: false,
   },
   flD: {
+    type: String,
+    default: "column",
+  },
+  flD2: {
     type: String,
     default: "column",
   },
@@ -25,7 +25,7 @@ defineProps({
 
 <template>
   <div class="flex" :style="'flex-direction: ' + flD">
-    <div class="head">
+    <div class="head" :style="'flex-direction: ' + flD2">
       <h1 class="head1">{{ head1 }}</h1>
       <h1 class="head2">{{ head2 }}</h1>
     </div>
@@ -46,7 +46,6 @@ defineProps({
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
 h1 {

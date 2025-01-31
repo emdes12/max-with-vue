@@ -7,6 +7,7 @@ import PrimaryButton from "./components/btn/PrimaryButton.vue";
 import ArtBoard from "./components/ArtBoard.vue";
 import HowItWorks from "./components/HowItWorks.vue";
 import OutputList from "./components/OutputList.vue";
+import WhyUsBox from "./components/WhyUsBox.vue";
 </script>
 
 <template>
@@ -28,7 +29,7 @@ import OutputList from "./components/OutputList.vue";
     <ArtBoard />
   </main>
 
-  <main class="container" id="about">
+  <main class="container overflow-below" id="about">
     <BigNPara
       head2="Iterative Marketing"
       head1="The Challenge of Today's"
@@ -67,8 +68,30 @@ import OutputList from "./components/OutputList.vue";
   </main>
 
   <main id="why-us">
-    <BigNPara head1="Why"
+    <div class="why"></div>
+    <div class="container">
+    <BigNPara head1="Why Rocketyzer" head2="Stands Out" />
+     <WhyUsBox />
+    </div>
   </main>
+
+  <main class="container overflow-below">
+    <BigNPara
+      flD2="column-reverse"
+      head2="Secret Sauce"
+      head1="The Value Proposition Toolkits"
+        txt="While the digital landscape is flooded with automated copy generators, Rocketyzer stands apart. Our foundation is the proven methodology of the Value Proposition Toolkit."
+    />
+  </main>
+
+  <section class="abs-works">
+    <div class="container">
+      <img class="img-abs" :src="AbsImg" alt="overlaping/overflowing text" />
+      <BigNPara
+        txt="Dive deep into a methodological approach that ensures every word aligns with your product’s core value, setting you apart in the market."
+      />
+    </div>
+  </section>
 </template>
 
 <style scoped>
@@ -84,8 +107,23 @@ import OutputList from "./components/OutputList.vue";
   width: 100%;
 }
 
-#about {
+.overflow-below {
   padding-bottom: 287px;
+}
+
+#why-us {
+  position: relative;
+}
+
+#why-us  .container {
+  top: -40px;
+}
+
+.why {
+  right: 0;
+  background-image: linear-gradient(180deg, #0E0E0F 0%, #272B3F 100%);
+  width: 100%;
+  height: 207px;
 }
 
 section.abs-works {
