@@ -9,12 +9,16 @@ defineProps({
     type: String,
     required: true,
   },
+  widTH: {
+    type: String,
+    Default: "max-content",
+  },
 });
 </script>
 
 <template>
   <a :href="link">
-    <button>
+    <button :style="'width: ' + widTH">
       {{ txt }}
     </button>
   </a>

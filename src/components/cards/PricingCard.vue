@@ -1,9 +1,20 @@
 <script setup>
+import PrimaryButton from "../btn/PrimaryButton.vue";
+
 defineProps({
   head: {
     type: String,
   },
   txt: {
+    type: String,
+  },
+  featuredArr: {
+    type: Array,
+  },
+  outputArr: {
+    type: Array,
+  },
+  btnText: {
     type: String,
   },
 });
@@ -15,12 +26,60 @@ defineProps({
       <div class="card">
         <h3>{{ head }}</h3>
         <p>{{ txt }}</p>
+        <PrimaryButton widTH="100%" :txt="btnText" link="#" />
+        <div class="line"></div>
+        <ul>
+          <h5>Features</h5>
+          <li v-for="(feat, index) in featuredArr" :key="index">{{ feat }}</li>
+        </ul>
+        <ul>
+          <h5>Outputs</h5>
+          <li v-for="(output, index) in outputArr" :key="index">
+            {{ output }}
+          </li>
+        </ul>
       </div>
     </div>
   </main>
 </template>
 
 <style scoped>
+.line {
+  width: 100%;
+  height: 1px;
+  margin: 30px 0;
+  background: #f5e9032e;
+}
+
+ul {
+  list-style-image: url("../../assets/icons/icon-rocketyzer-4.svg.svg");
+  color: var(--vt-white);
+  padding-inline-start: 30px;
+  min-height: 90px;
+}
+
+li {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+h5 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.3199999928474426px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 .card-container {
   position: relative;
 }
@@ -33,14 +92,14 @@ defineProps({
   background: transparent;
   transition: all 0.3s ease;
   border-radius: 10px;
-  padding: 1px;
+  padding: 2px;
 }
 
 .card {
   border-radius: 10px;
   border: 1px #2b3254 solid;
-  width: 370px;
-  height: 470px;
+  width: 350px;
+  height: 810px;
   padding: 30px;
   gap: 30px;
   background: var(--vt-black);

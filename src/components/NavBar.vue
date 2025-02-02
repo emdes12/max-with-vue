@@ -37,8 +37,8 @@ letter-spacing: -0.6399999856948853px;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-padding: 8px 10px;
-border-radius: 12px;
+padding: 8px 12px;
+border-radius: 5px;
 background-color: transparent;
 }
 

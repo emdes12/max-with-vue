@@ -9,6 +9,8 @@ import HowItWorks from "./components/HowItWorks.vue";
 import OutputList from "./components/OutputList.vue";
 import WhyUsBox from "./components/WhyUsBox.vue";
 import Pricing from "./components/Pricing.vue";
+import Footer from "./components/Footer.vue";
+import SecondaryButton from "./components/btn/SecondaryButton.vue";
 </script>
 
 <template>
@@ -123,6 +125,10 @@ import Pricing from "./components/Pricing.vue";
         <Pricing />
       </div>
     </main>
+
+    <footer>
+      <Footer />
+    </footer>
 </template>
 
 <style scoped>
@@ -228,5 +234,9 @@ section.abs-works {
 .processes {
   background: #0e0e0f;
   width: 100%;
+}
+
+footer {
+  background: #0E0E0E;
 }
 </style>
