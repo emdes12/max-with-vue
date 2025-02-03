@@ -19,6 +19,6 @@ import OutputCard from "./cards/outputCard.vue";
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 </style>

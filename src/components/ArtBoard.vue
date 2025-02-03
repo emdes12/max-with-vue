@@ -19,7 +19,7 @@ section {
     display: flex;
     align-items: center;
     gap: 30px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 </style>

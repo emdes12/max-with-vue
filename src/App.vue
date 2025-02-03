@@ -160,6 +160,7 @@ import SecondaryButton from "./components/btn/SecondaryButton.vue";
   padding: 40px;
   display: flex;
   flex-wrap: wrap-reverse;
+  gap: 30px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -238,5 +239,11 @@ section.abs-works {
 
 footer {
   background: #0E0E0E;
+}
+
+@media (max-width: 850px) {
+  .prop-value-desc img {
+    width: 80%;
+  }
 }
 </style>

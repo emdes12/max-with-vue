@@ -55,7 +55,7 @@ main {
   display: flex;
   align-items: center;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -65,49 +65,10 @@ img {
 
 .contain {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 30px;
   padding-bottom: 3rem;
 }
-
-/* .icony-textt {
-  margin-top: 25px;
-  padding: 30px;
-  background: var(--vt-black);
-} */
-
-/* .illustrations {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.illustration-text {
-  color: var(--vt-white);
-  font-family: Inter;
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 29px;
-  letter-spacing: -0.7799999713897705px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.left {
-  text-align: left;
-}
-
-.midcent {
-  text-align: center;
-}
-
-.botmright {
-  text-align: right;
-} */
 </style>

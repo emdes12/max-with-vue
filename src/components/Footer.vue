@@ -84,6 +84,7 @@ h3 {
   display: flex;
   align-items: center;
   color: #aaa;
+  gap: 30px;
   justify-content: space-between;
 }
 
@@ -96,5 +97,21 @@ h3 {
 
 .special-links a {
   color: #aaa;
+  transition: all 0.2s ease;
+}
+
+.special-links a:hover {
+  color: #fff;
+}
+
+@media (max-width: 850px) {
+  .copyright {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .special-links {
+    flex-direction: column;
+  }
 }
 </style>

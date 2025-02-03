@@ -58,7 +58,6 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  /* background: orange; */
 }
 
 .tabimg {
@@ -70,7 +69,7 @@ li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 470px;
+  min-width: 470px;
   padding: 30px;
   gap: 12px;
   border-radius: 12px;
@@ -122,5 +121,25 @@ li:hover {
 li:hover p, 
 li:hover h4{
   color: #292B3F;
+}
+
+@media (max-width: 950px) {
+  .navtab {
+    grid-template-rows: 202px 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  ul {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+
+  li {
+    min-width: 290px;
+    min-height: 202px;
+  }
 }
 </style>
