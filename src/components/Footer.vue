@@ -108,10 +108,12 @@ h3 {
   .copyright {
     justify-content: center;
     flex-direction: column;
+    font-size: 12px;
+  }
+  
+  img {
+    width: 100px;
   }
 
-  .special-links {
-    flex-direction: column;
-  }
 }
 </style>
