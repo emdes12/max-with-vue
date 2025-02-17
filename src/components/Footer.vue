@@ -115,5 +115,9 @@ h3 {
     width: 100px;
   }
 
+  h2, h3 {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 </style>
