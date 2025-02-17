@@ -139,7 +139,24 @@ li:hover h4{
 
   li {
     min-width: 290px;
-    min-height: 202px;
+    min-height: 140px;
+    padding: 20px;
+  }
+  
+  h4 {
+    font-size: 18px;
+    line-height: 31px;
+    height: 62.01px;
+  }
+
+  span, p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .card {
+    width: 182px;
+    height: 180px;
   }
 }
 </style>

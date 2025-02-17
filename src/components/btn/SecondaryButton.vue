@@ -44,4 +44,11 @@ button:hover {
   background-color: var(--vt-black);
   border: none;
 }
+
+@media (max-width: 850px) {
+  button {
+    font-size: 12px;
+    padding: 14px 20px; 
+  }
+}
 </style>

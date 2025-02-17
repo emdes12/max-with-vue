@@ -81,4 +81,16 @@ p {
   color: var(--vt-white);
   max-width: 520px;
 }
+
+@media (max-width: 850px) {
+  h1 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 </style>

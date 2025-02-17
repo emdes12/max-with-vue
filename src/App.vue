@@ -245,5 +245,19 @@ footer {
   .prop-value-desc img {
     width: 80%;
   }
+
+  section.abs-works {
+    height: 587px;
+  }
+
+  .details h4 {
+    font-size: 18px;
+    line-height: 31px
+  }
+
+  .details span, .details p {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 </style>

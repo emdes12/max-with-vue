@@ -48,4 +48,11 @@ button:hover {
   background-image: linear-gradient(90deg, #45EFE5 0%, #CCF652 90%);
   border: none;
 }
+
+@media (max-width: 850px) {
+  button {
+    font-size: 12px;
+    padding: 14px 20px; 
+  }
+}
 </style>

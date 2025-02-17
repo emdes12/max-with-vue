@@ -66,8 +66,8 @@ header {
 }
 
 .hamburger .line{
-  width: 50px;
-  height: 5px;
+  width: 30px;
+  height: 3px;
   background-color: #ecf0f1;
   display: block;
   margin: 8px auto;
@@ -105,6 +105,10 @@ header {
 
   .show-desktop {
     display: none;
+  }
+
+  img {
+    width: 100px;
   }
 }
 </style>

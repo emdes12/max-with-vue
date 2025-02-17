@@ -75,4 +75,22 @@ p {
   text-decoration-skip-ink: none;
   color: #8c929e;
 }
+
+@media (max-width: 850px) {
+  h3 {
+    font-size: 18px;
+    line-height: 31px
+  }
+
+  span, p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .card {
+    width: 230px;
+    padding: 20px;
+    height: 340px;
+  }
+}
 </style>
