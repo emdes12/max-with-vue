@@ -85,8 +85,9 @@ h3 {
   }
 
   .card {
-    width: 182px;
-    height: 180px;
+    width: 280px;
+    height: 222px;
+    padding: 15px;
   }
 }
 </style>
