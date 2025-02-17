@@ -134,6 +134,7 @@ h3 {
   .card {
     width: 182px;
     height: 180px;
+    padding: 20px;
   }
 }
 </style>
