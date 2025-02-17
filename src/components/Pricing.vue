@@ -9,7 +9,7 @@ const customOutputArray = ['Value Proposition Statement', 'Proposition Map', 'Co
 </script>
 
 <template>
-    <div class="container">
+    <div class="containss">
         <PricingCard cardName="Free" sub="per month" head="$0" txt="Perfect for individuals or startups looking for a quick value proposition." btnText="Get Started for Free" :outputArr="freeOutputArray" :featuredArr="freeFeaturesArray"/>
         <PricingCard cardName="Pro" sub="per month" head="$99" txt="For businesses that need comprehensive marketing collateral." btnText="Strat Free Trail" :featuredArr="nine9FeatureArray" :outputArr="nine9OutputArray"/>
         <PricingCard cardName="Custom" head="Custom" txt="The ultimate package with an added human touch for perfection." btnText="Contact us for a Custom Quote" :featuredArr="customFeatureArray" :outputArr="customOutputArray"/>
@@ -17,7 +17,7 @@ const customOutputArray = ['Value Proposition Statement', 'Proposition Map', 'Co
 </template>
 
 <style scoped>
-.container {
+.containss {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
