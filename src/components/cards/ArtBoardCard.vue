@@ -72,4 +72,21 @@ h3 {
   text-decoration-skip-ink: none;
   color: var(--vt-white);
 }
+
+@media (max-width: 850px) {
+  h3 {
+    font-size: 18px;
+    line-height: 31px
+  }
+
+  span, p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .card {
+    width: 182px;
+    height: 180px;
+  }
+}
 </style>
